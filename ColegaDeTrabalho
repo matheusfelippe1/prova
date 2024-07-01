@@ -1,0 +1,33 @@
+package prova;
+
+public class ColegaDeTrabalho extends Assinatura{
+	private String cumprimento;
+	private String ramal;
+	
+	
+	
+	public ColegaDeTrabalho(String nome, String cumprimento, String ramal) {
+		super(nome);
+		this.cumprimento = cumprimento;
+		this.ramal = ramal;
+	}
+
+	public String assinar() {
+		return this.cumprimento + ", \n" + getNome() + "\n" + "Ramal " + this.ramal;
+	}
+	
+	public String getCumprimento() {
+		return cumprimento;
+	}
+	public void setCumprimento(String cumprimento) {
+		this.cumprimento = cumprimento;
+	}
+	public String getRemal() {
+		return ramal;
+	}
+	public void setRemal(String remal) {
+		this.ramal = remal;
+	}
+	
+	
+}
