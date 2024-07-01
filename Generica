@@ -1,0 +1,40 @@
+package prova;
+
+public class Generica extends ColegaDeTrabalho{
+	private String cargo;
+	private String email;
+	private String telefone;
+	
+	public Generica(String nome, String cumprimento, String ramal, String cargo, String email, String telefone) {
+		super(nome, cumprimento, ramal);
+		this.cargo = cargo;
+		this.email = email;
+		this.telefone = telefone;
+	}
+
+	public String assinar() {
+		return getCumprimento() + ", \n" + getNome() + ", " + this.cargo + "\n " + this.email + "\n"
+				+ "Fone: " + this.telefone;
+	}
+	
+	public String getCargo() {
+		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	
+	
+}
