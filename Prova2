@@ -1,0 +1,21 @@
+package prova;
+
+import java.util.ArrayList;
+
+public class Prova2 {
+	public static void main(String[] args) {
+		ArrayList<Assinatura> assinaturas = new ArrayList<>();
+		
+		assinaturas.add(new Amigo("Matheus Felippe"));
+		
+		ColegaDeTrabalho ct = new ColegaDeTrabalho("Matheus Felippe" , "Atenciosamente", "3211");
+		assinaturas.add(ct);
+		
+		Generica g = new Generica("Matheus Felippe", "Att.", "3211", "Docente", "matheus_felipelondrina@hotmail.com", "(43)9 8405-6959");
+		assinaturas.add(g);
+		
+		for(Assinatura itemAss: assinaturas) {
+			System.out.println(itemAss.assinar());
+		}
+	}
+}
