@@ -1,0 +1,12 @@
+package prova;
+
+public class Amigo extends Assinatura{
+	public Amigo(String nome){
+		super(nome);
+	}
+	
+	public String assinar() {
+		return "[] \n " + getNome() + ".";
+	}
+
+}
